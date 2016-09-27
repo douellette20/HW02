@@ -119,7 +119,7 @@ string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please
 	int index = Phone_Directory::find(name);
 	if (index != -1)
 	{
-		string toBeReturned = the_directory[index].get_number();
+		string toBeReturned = the_directory[index].get_name();
 		for (int i = index; i < size - 1; i++)
 			the_directory[i] = the_directory[i + 1];
 		return toBeReturned;
